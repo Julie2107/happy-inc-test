@@ -1,0 +1,87 @@
+@keyframes rendergrey {
+  0% {
+    stroke-dasharray: 0 690;
+		stroke-dashoffset: 135;
+  }
+
+	100% {
+		stroke-dasharray: 620 70;
+		stroke-dashoffset: 135;
+	}
+}
+
+@keyframes rendergreen {
+  0% {
+    stroke-dasharray: 0 690;
+		stroke-dashoffset: 135;
+  }
+
+	100% {
+		stroke-dasharray: 440 250;
+		stroke-dashoffset: 135;	
+	}
+}
+
+@keyframes renderyellow {
+  0% {
+    stroke-dasharray: 0 690;
+		stroke-dashoffset: 135;
+  }
+
+	100% {
+		stroke-dasharray: 220 470;
+		stroke-dashoffset: 135;	
+	}
+}
+
+
+
+.chart {
+  position: absolute;
+  top: 0;
+  left: 0;
+	background-color: white;
+	z-index: -1;
+	//width: 250;
+	//height: 250;
+
+  svg {
+    fill: none;
+    
+  }
+}
+
+.grey-shape {
+	animation-name: rendergrey;
+  animation-duration: 3s;
+  stroke: #ececec;
+  stroke-width: 6;
+	stroke-dasharray: 620 70;
+	stroke-dashoffset: 135;
+	animation-fill-mode: forwards;
+	stroke-linecap: round;
+}
+
+.green-shape {
+	animation-name: rendergreen;
+  animation-duration: 2s;
+	animation-delay: 3s;
+  stroke: @green;
+  stroke-width: 8;
+	stroke-dasharray: 0 690;
+	stroke-dashoffset: 135;
+	animation-fill-mode: forwards;
+	stroke-linecap: round;
+}
+
+.yellow-shape {
+	animation-name: renderyellow;
+  animation-duration: 1s;
+	animation-delay: 5s;
+  stroke: @yellow;
+  stroke-width: 10;
+	stroke-dasharray: 0 690;
+	stroke-dashoffset: 135;
+	animation-fill-mode: forwards;
+	stroke-linecap: round;
+}

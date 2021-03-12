@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <article class="box">
+      <div class="diagram">
+        <div class="chart">
+          <svg width="230" height="230" viewBox="0 0 230 230">
+            <circle class="grey-shape" r="110" cx="50%" cy="50%"></circle>
+            <circle class="green-shape" r="110" cx="50%" cy="50%"></circle>
+            <circle class="yellow-shape" r="110" cx="50%" cy="50%"></circle>
+          </svg>
+        </div>
+        <div class="diagram__bubble"></div>
+        <p class="diagram__percent">
+          <span class="diagram__percent-integer">72</span>
+          <span class="diagram__percent-decimal">.7</span>
+        </p>
+        <h1 class="diagram__title">Лояльность</h1>
+        <p class="diagram__level">ниже среднего</p>
+        <p class="diagram__desc">по отрасли: FMCG <br>значений слева от медианы<br> 52.0% - 83.1%</p>
+        <div class="diagram__num"><span>3.1</span></div>
+      </div>
+      <table class="diagram__stats stats" cellspacing="10">
+        <tr class="stats__row">
+          <td class="stats__title">Промоутеры</td>
+          <td class="stats__numbers">
+            <p class="stats__percents">32.0%</p>
+            <div class="stats__persons">
+              <span>81</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.59 16.31"><path class="cls-1" d="M15.11,12.71a1.82,1.82,0,0,0-1-1.29l-2.81-1.29h0l-1.16-.88h0a.8.8,0,0,0-.19-.38l0,0V7.44a7.55,7.55,0,0,0,.72-1.32,1.7,1.7,0,0,0,.77-1.32c0-.69-.21-.85-.42-.86C11,3.47,11.24,0,7.71,0,3.92,0,4.46,4,4.46,4h0c-.2,0-.42.17-.38.8a1.76,1.76,0,0,0,.76,1.32,9.32,9.32,0,0,0,.72,1.32V8.89a.78.78,0,0,0-.19.36l-1.16.87v.05L1.5,11.42a1.81,1.81,0,0,0-1,1.29L0,15.15s.46,1.16,7.8,1.16,7.79-1.16,7.79-1.16Z"/></svg>
+
+            </div>
+          </td>
+          <td class="stats__graph">
+            <div class="stats__colored stats__colored--green">
+              <div class="stats__colored-bright"></div>
+              <div class="stats__colored-light"></div>
+            </div>
+            <div class="stats__difference">+1.2%</div>
+          </td>
+        </tr>
+        <tr class="stats__row">
+          <td class="stats__title">Скептики</td>
+          <td class="stats__numbers">
+            <p class="stats__percents">39.1%</p>
+            <div class="stats__persons">
+              <span>8</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.59 16.31"><path class="cls-1" d="M15.11,12.71a1.82,1.82,0,0,0-1-1.29l-2.81-1.29h0l-1.16-.88h0a.8.8,0,0,0-.19-.38l0,0V7.44a7.55,7.55,0,0,0,.72-1.32,1.7,1.7,0,0,0,.77-1.32c0-.69-.21-.85-.42-.86C11,3.47,11.24,0,7.71,0,3.92,0,4.46,4,4.46,4h0c-.2,0-.42.17-.38.8a1.76,1.76,0,0,0,.76,1.32,9.32,9.32,0,0,0,.72,1.32V8.89a.78.78,0,0,0-.19.36l-1.16.87v.05L1.5,11.42a1.81,1.81,0,0,0-1,1.29L0,15.15s.46,1.16,7.8,1.16,7.79-1.16,7.79-1.16Z"/></svg>
+            </div>
+          </td>
+          <td class="stats__graph">
+            <div class="stats__colored stats__colored--yellow">
+              <div class="stats__colored-bright"></div>
+              <div class="stats__colored-light"></div>
+            </div>
+            <div class="stats__difference">+4.8%</div>
+          </td>
+        </tr>
+        <tr class="stats__row">
+          <td class="stats__title">Критики</td>
+          <td class="stats__numbers">
+            <p class="stats__percents">79.8%</p>
+            <div class="stats__persons">
+              <span>7</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.59 16.31"><path class="cls-1" d="M15.11,12.71a1.82,1.82,0,0,0-1-1.29l-2.81-1.29h0l-1.16-.88h0a.8.8,0,0,0-.19-.38l0,0V7.44a7.55,7.55,0,0,0,.72-1.32,1.7,1.7,0,0,0,.77-1.32c0-.69-.21-.85-.42-.86C11,3.47,11.24,0,7.71,0,3.92,0,4.46,4,4.46,4h0c-.2,0-.42.17-.38.8a1.76,1.76,0,0,0,.76,1.32,9.32,9.32,0,0,0,.72,1.32V8.89a.78.78,0,0,0-.19.36l-1.16.87v.05L1.5,11.42a1.81,1.81,0,0,0-1,1.29L0,15.15s.46,1.16,7.8,1.16,7.79-1.16,7.79-1.16Z"/></svg>
+            </div>
+          </td>
+          <td class="stats__graph">
+            <div class="stats__colored stats__colored--red">
+              <div class="stats__colored-bright"></div>
+              <div class="stats__colored-light"></div>
+            </div>
+            <div class="stats__difference">-9.7%</div>
+          </td>
+        </tr>
+      </table>
+    </article>
+  </main>
+</body>
+</html>

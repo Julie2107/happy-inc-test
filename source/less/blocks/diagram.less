@@ -1,0 +1,127 @@
+
+.diagram {
+  position: relative;
+  width: 230px;
+  height: 230px;
+  padding: 50px 35px;
+  margin-left: auto;
+  text-align: center;
+  color: @dark-grey;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: -30px;
+    left: 98px;
+    height: 0;
+    width: 40px;
+    height: 45px;
+    background: url('../img/loyalty.svg') no-repeat;
+  }
+}
+
+.diagram__percent {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
+
+.diagram__percent-integer {
+  position: relative;
+  font-size: 48px;
+  letter-spacing: -0.05em;
+  &::after {
+    position: absolute;
+    content: "%";
+    top: -10px;
+    right: -18px;
+    font-size: 22px;
+    color: @light-grey;
+  }
+}
+
+.diagram__percent-decimal {
+  font-size: 22px;
+}
+
+.diagram__title {
+  font-size: 22px;
+  line-height: 22px;
+  margin: 8px 0;
+}
+
+.diagram__level {
+  font-size: 16px;
+  line-height: 18px;
+  color: @yellow;
+  font-weight: bold;
+}
+
+.diagram__desc {
+  font-size: 11px;
+  line-height: 13px;
+  color: @light-grey;
+  margin-bottom: 10px;
+}
+
+.diagram__num {
+  font-size: 16px;
+  color: @green;
+  
+
+  & span {
+    position: relative;
+    padding-left: 20px;
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      left: 0;
+      top: -5px;
+      width: 1px;
+      height: 1px;
+      border: 8px solid transparent;
+      border-bottom-color: @green;
+    }
+  }
+}
+
+.diagram__stats {
+  width: 226px;
+  margin-left: auto;
+}
+
+.diagram__bubble {
+  position: absolute;
+  width: 30px;
+  height: 225px;
+  top: 50%;
+  left: -20px;
+  border: 1px solid @light-grey;
+  border-right: none;
+  border-radius: 4px;
+  z-index: -2;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: 50px;
+    left: 0;
+    width: 13px;
+    height: 10px;
+    border-top: 1px solid @light-grey;
+  }
+
+  &::after {
+    position: absolute;
+    content: "+";
+    display: block;
+    left: -5px;
+    bottom: 5px;
+    font-size: 16px;
+    background-color: white;
+  }
+}

@@ -1,0 +1,106 @@
+.stats {
+  color: @dark-grey;
+  font-size: 12px;
+  background-color: white;
+
+  td:not(.stats__graph) {
+    border: none;
+  }
+}
+
+.stats__row {
+  //margin-bottom: 13px;
+}
+
+.stats__title {
+  font-weight: bold;
+  vertical-align: top;
+ // padding-right: 5px;
+ // padding-left: 15px;
+}
+
+.stats__numbers {
+  //padding-right: 10px;
+  text-align: right;
+}
+
+.stats__percents {
+  font-weight: bold;
+}
+
+.stats__persons svg {
+  fill: @light-grey;
+  width: 11px;
+  height: 11px;
+}
+
+.stats__graph {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+  width: 90px;
+  margin: 0;
+  padding: 0;
+  padding-right: 5px;
+}
+
+.stats__colored {
+  display: flex;
+  flex-direction: column;
+}
+
+.stats__colored-bright {
+  height: 26px;
+  border-top-left-radius: 3px;
+}
+
+.stats__colored-light {
+  height: 10px;
+  opacity: 0.5;
+  border-bottom-left-radius: 3px;
+} 
+
+.stats__colored--green {
+  & > * {
+    background-color: @green;
+  }
+
+  .stats__colored-bright {
+    width: 31px;
+  }
+
+  .stats__colored-light {
+    width: 29px;
+  }
+}
+
+.stats__colored--yellow {
+  & > * {
+    background-color: @yellow;
+  }
+
+  .stats__colored-bright {
+    width: 33px;
+  }
+
+  .stats__colored-light {
+    width: 27px;
+  }
+}
+
+.stats__colored--red {
+  & > * {
+    background-color: @red;
+  }
+
+  .stats__colored-bright {
+    width: 25px;
+  }
+
+  .stats__colored-light {
+    width: 30px;
+  }
+}
