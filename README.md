@@ -15,7 +15,7 @@
   <li>Gulp</li>
 </ul>
 
-<p> Deploy: <a href="https://fervent-villani-f4f1be.netlify.app/">https://romantic-hopper-6f4358.netlify.app/</a>
+<p> Deploy: <a href="https://romantic-hopper-6f4358.netlify.app">https://romantic-hopper-6f4358.netlify.app/</a>
 
 ## Установка
 
